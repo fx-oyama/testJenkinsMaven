@@ -7,14 +7,21 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>MavenTest001</name>
 
-  <build>
-    <defaultGoal>install</defaultGoal>
-    <directory>${basedir}/target</directory>
-    <finalName>${artifactId}-${version}</finalName>
-  </build>
+ <dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+    </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12.0</version>
+        </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-  <groupId>junit</groupId>
-  <artifactId>junit</artifactId>
-  <version>4.0</version>
 
 </project>
