@@ -40,19 +40,19 @@ public class VarUtilTest {
 		assertEquals(result, cal);
 	}
 
-	@Test
-	public void test002() {
-		int a = 1;
-		int b = 2;
-		int result = 4;
-		int cal = 0;
-
-		JenUtil cv = new JenUtil();
-
-		cal = cv.calculateValue(a, b);
-
-		assertEquals(result, cal);
-	}
+//	@Test
+//	public void test002() {
+//		int a = 1;
+//		int b = 2;
+//		int result = 4;
+//		int cal = 0;
+//
+//		JenUtil cv = new JenUtil();
+//
+//		cal = cv.calculateValue(a, b);
+//
+//		assertEquals(result, cal);
+//	}
 
 	@Test
 	public void test003() {
