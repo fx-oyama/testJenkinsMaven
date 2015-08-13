@@ -32,11 +32,7 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
     </dependency>
-    <dependency>
-        <groupId>com.puppycrawl.tools</groupId>
-        <artifactId>checkstyle</artifactId>
-    </dependency>
-   </dependencies>
+  </dependencies>
   <dependencyManagement>
     <dependencies>
         <dependency>
@@ -45,9 +41,6 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
-
-
-
     <dependency>
       <groupId>checkstyle</groupId>
         <artifactId>checkstyle</artifactId>
