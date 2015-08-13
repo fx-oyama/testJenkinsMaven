@@ -32,26 +32,12 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.0.201403182114</version>
+                <version>0.7.5.201505241946</version>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
-                        <phase>test-compile</phase>
                         <goals>
                             <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <propertyName>jacocoArgs</propertyName>
-                            <includes>
-                                <include>${jacoco.include.package}</include>
-                            </includes>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>
