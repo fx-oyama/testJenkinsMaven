@@ -8,7 +8,6 @@
   <name>MavenTest001</name>
 
 <build>
-<!--
     <pluginManagement>
         <plugins>
             <plugin>
@@ -20,14 +19,15 @@
             </plugin>
         </plugins>
     </pluginManagement>
--->
+
     <plugins>
             <plugin>
+       <echo message="jacocoArgs: ${jacocoArgs}"/>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.17</version>
                 <configuration>
-                    <argLine>-XX:-UseSplitVerifier</argLine>
+                    <argLine>${jacocoArgs}</argLine>
                 </configuration>
             </plugin>
             <plugin>
