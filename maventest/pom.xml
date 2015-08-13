@@ -29,16 +29,23 @@
                     <argLine>${jacocoArgs}</argLine>
                 </configuration>
             </plugin>
-            <plugin>
+           <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.7.5.201505241946</version>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
+                        <phase>test-compile</phase>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <propertyName>jacocoArgs</propertyName>
+                            <includes>
+                                <include>${jacoco.include.package}</include>
+                            </includes>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>report</id>
@@ -46,7 +53,7 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
-                   </execution>
+                    </execution>
                 </executions>
             </plugin>
      </plugins>
