@@ -6,22 +6,7 @@
   <artifactId>maventest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>MavenTest001</name>
-  <build>
-    <pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.9.1</version>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                   <artifactId>findbugs-maven-plugin</artifactId>
-                   <version>2.4.0</version>
-            </plugin>
-        </plugins>
-    </pluginManagement>
-  </build>
+
   <reporting>
     <plugins>
         <plugin>
@@ -47,7 +32,11 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
     </dependency>
-  </dependencies>
+    <dependency>
+        <groupId>com.puppycrawl.tools</groupId>
+        <artifactId>checkstyle</artifactId>
+    </dependency>
+   </dependencies>
   <dependencyManagement>
     <dependencies>
         <dependency>
@@ -56,6 +45,15 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
+
+
+    <dependency>
+      <groupId>checkstyle</groupId>
+        <artifactId>checkstyle</artifactId>
+        <version>5.0</version>
+    </dependency>
+
   </dependencyManagement>
 
   <properties>
