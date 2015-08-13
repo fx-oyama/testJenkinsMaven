@@ -6,8 +6,43 @@
   <artifactId>maventest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>MavenTest001</name>
+  <build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.9.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                   <artifactId>findbugs-maven-plugin</artifactId>
+                   <version>2.4.0</version>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+  </build>
+  <reporting>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <configuration>
+                <configLocation>config/maventest_checkstyle.xml</configLocation>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+               <artifactId>findbugs-maven-plugin</artifactId>
+               <configuration>
+                  <effort>Max</effort>
+                  <xmlOutput>true</xmlOutput>
+               </configuration>
+        </plugin>
+    </plugins>
+  </reporting>
 
- <dependencies>
+  <dependencies>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -18,10 +53,13 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.12</version>
         </dependency>
     </dependencies>
   </dependencyManagement>
 
+  <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
 </project>

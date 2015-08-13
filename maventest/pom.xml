@@ -6,8 +6,6 @@
   <artifactId>maventest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>MavenTest001</name>
-
-
   <build>
     <pluginManagement>
         <plugins>
@@ -55,7 +53,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.12</version>
         </dependency>
     </dependencies>
   </dependencyManagement>
