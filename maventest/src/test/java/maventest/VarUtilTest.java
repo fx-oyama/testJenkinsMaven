@@ -44,7 +44,7 @@ public class VarUtilTest {
 	public void test002() {
 		int a = 1;
 		int b = 2;
-		int result = 3;
+		int result = 4;
 		int cal = 0;
 
 		JenUtil cv = new JenUtil();
