@@ -64,8 +64,8 @@
           <artifactId>findbugs-maven-plugin</artifactId>
             <configuration>
               <effort>Max</effort>
-<!--              <findbugsXmlOutput>true</findbugsXmlOutput>     -->
-              <xmlOutput>true</xmlOutput>
+<!--              <findbugsXmlOutput>true</findbugsXmlOutput>
+              <xmlOutput>true</xmlOutput>     -->
               <findbugsXmlInputDirectory>${project.build.directory}/findbugs</findbugsXmlInputDirectory>
            </configuration>
       </plugin>
