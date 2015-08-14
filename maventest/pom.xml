@@ -66,6 +66,7 @@
               <effort>Max</effort>
               <findbugsXmlOutput>true</findbugsXmlOutput>
               <xmlOutput>true</xmlOutput>
+              <findbugsXmlInputDirectory>${project.build.directory}/findbugs</findbugsXmlInputDirectory>
            </configuration>
       </plugin>
       <plugin>
