@@ -16,4 +16,9 @@ public class JenUtil {
 		return a + b;
 	}
 
+	public final int calculateValue2(final int a, final int b) {
+		return a * b;
+	}
+
+
 }
